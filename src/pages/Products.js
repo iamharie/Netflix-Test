@@ -1,3 +1,7 @@
 export default function Products() {
-  return <h1>Products ⌚️</h1>;
+  return (
+    <div>
+      <h1>Products ⌚️</h1>
+    </div>
+  );
 }
