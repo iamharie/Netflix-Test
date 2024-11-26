@@ -11,6 +11,7 @@ import Products from "./pages/Products";
 import Root from "./pages/Root";
 import ErrorPage from "./pages/Error";
 import ProductDetails from "./pages/ProductDetail";
+import ProductsDetails from "./pages/Products";
 
 //TRADITIONAL WAY OF CREATING ROUTS IN SPA
 // const routeDefinitions = createRoutesFromElements(
@@ -29,10 +30,10 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/products", element: <Products /> },
-      { path: "/products/:id", element: <ProductDetails /> },
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "products", element: <Products /> },
+      { path: "products/:id", element: <ProductDetails /> },
     ],
   },
 ]);

@@ -9,7 +9,7 @@ export default function About() {
     <>
       <h1>we are the best watch dealers</h1>
       <p>
-        Go to <Link to="/Products">Products</Link>
+        Go to <Link to="/products">Products</Link>
       </p>
       <button onClick={handleNavigate}>Home</button>
     </>

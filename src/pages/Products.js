@@ -11,11 +11,9 @@ export default function ProductsDetails() {
     <div>
       <h1>Products ⌚️</h1>
       <ul>
-        {PRODUCTS.map((proudctDetails) => (
-          <li key={proudctDetails.id}>
-            <Link to={`/products/${proudctDetails.id}`}>
-              {proudctDetails.name}
-            </Link>
+        {PRODUCTS.map((prod) => (
+          <li key={prod.id}>
+            <Link to={`${prod.id}`}>{prod.name}</Link>
           </li>
         ))}
       </ul>

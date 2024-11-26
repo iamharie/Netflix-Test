@@ -18,7 +18,7 @@ export default function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="about"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
@@ -28,7 +28,7 @@ export default function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/products"
+              to="products"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
